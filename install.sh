@@ -1,3 +1,4 @@
-apt-get -y update
-apt-get -y install python3
-apt-get -y install ffmpeg
+pip install pptx
+pip install pydub
+pip install natsort
+pip install pickle
