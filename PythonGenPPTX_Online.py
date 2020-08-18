@@ -44,7 +44,7 @@ myList = myTable.findAll("td", {"class","ctext"})
 
 
 language = "zh-tw"
-FolderName = "Python_audio_v2\output"
+FolderName = os.path.join("Python_audio_v2", "output")
 
 duration_list = []
 myContent = []
@@ -82,10 +82,10 @@ for i, mysentence in enumerate(myContent):
 
 
 # In[47]:
-with open('./Python_video_v2/mylist', 'wb') as f: 
+with open(os.path.join("Python_video_v2", "mylist"), 'wb') as f: 
     pickle.dump(duration_list, f)
 
-with open('./Video_combine/video_name', 'wb') as f: 
+with open(os.path.join("Video_combine", "video_name"), 'wb') as f: 
     pickle.dump(name, f)
 # with open('mylist', 'rb') as f: 
 #     mylist = pickle.load(f) 
