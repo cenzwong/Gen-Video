@@ -6,4 +6,4 @@ pip3 install requests
 pip3 install gtts
 pip3 install mutagen
 
-apt-get install ffmpeg -y
+apt-get install -y ffmpeg 
